@@ -28,6 +28,7 @@ int read_taskset(task **taskset)
 	int N; //Total number of tasks in the system
 	//Read the total number of tasks
 	scanf("%d",&N);
+	// allocate memory
 	*taskset = (task*)malloc(sizeof(task) * N);
 	task *temp_set = *taskset;
 	//read the individual task parameters
